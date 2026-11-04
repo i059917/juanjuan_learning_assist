@@ -20,7 +20,7 @@ Generate a Markdown worksheet where each item has exactly one blank and the targ
 - Each page starts with a level-2 heading: `## 第 N 页 · <主题描述>`
 - One instruction line under each heading: `每题只有一个空格，请在横线上填入括号中动词的正确形式。`
 - 16 items per page, numbered 1-16 restarting per page
-- Blank written as `______` and the base form in brackets: `______ (play)`
+- Blank written as `____________` (12 underscores) and the base form in brackets: `____________ (play)`. The line must be long enough for a student to write the answer on a printed page — never use fewer than 10 underscores.
 - Separate pages with `<!-- pagebreak -->`
 - Filename and headings in Chinese
 
@@ -51,6 +51,7 @@ Balance the mix across the whole sheet:
 Check the generated file:
 
 - No 参考答案 / no 错题整理 / no 速查表 / no 姓名日期得分
+- Every blank uses 12 underscores, no shorter
 - Every page has 16 items and its own `##` heading
 - Every page contains affirmative, negative, interrogative and modal items
 - No `has been` / `have been` / `have finished` anywhere
